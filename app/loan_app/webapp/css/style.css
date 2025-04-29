@@ -1,1 +1,46 @@
-/* Enter your custom styles here */
+.customPage {
+    background-color: white;
+    font-weight: bold;
+}
+
+.mandatoryStar {
+    color: red;
+    margin-left: 5px;
+}
+
+.customLabel {
+    color: black;
+}
+
+
+
+
+
+
+.customButton{
+    color: brown;
+     
+}
+
+
+
+.ToolbarM{
+    background-color: lightskyblue;
+}
+
+.customInput .sapMInputBaseContentWrapper{
+    height: 50px !important;
+    margin-bottom: 10px !important;
+
+}
+
+.customInput .sapMInputBase {
+    height: 50px !important;
+}
+
+.customMargin {
+    margin-bottom: 25px; /* Adjust the value as needed */
+}
+
+    
+

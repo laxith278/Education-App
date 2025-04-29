@@ -1,0 +1,116 @@
+<mvc:View
+    controllerName="loanapp.controller.loanApplication"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    >
+    <Shell >
+    <App >
+    <Page id="LApage" showHeader="false" enableScrolling="true" class="customPage">    
+        <content>
+            <f:SimpleForm class="center" >
+            <FlexBox
+                id="LAflexbox"
+                direction="Row"
+                justifyContent="SpaceBetween"
+                fitContainer="true"
+                class="sapUiSmallMargin">
+        
+            
+                
+                <VBox id="LAbox1" width="48%" >
+                <VBox class="customMargin">
+                <HBox id="LAhbox0">
+                    <Label id="LAlabel1" text="Enter Applicant Name" class="customLabel"/>
+                    <Text id="LAtext" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterApplicantName" placeholder="Enter Applicant Name" width="100%" class="customInput" />
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox1">
+                    <Label id="LAlabel2" text="Enter Applicant Address" class="customLabel" />
+                    <Text id="LAtext1" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterApplicantAddress" placeholder="Enter Applicant Address" width="100%" class="customInput" />
+                </VBox>
+
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox2">
+                    <Label id="LAlabel3" text="Enter Applicant Mobile No" class="customLabel"/>
+                    <Text id="LAtext2" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterApplicantMobileNo" placeholder="Enter Applicant Mobile No" width="100%" class="customInput"/>
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox3">
+                    <Label id="LAlabel4" text="Enter Applicant Email Id" class="customLabel"/>
+                    <Text id="LAtext3" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterEmailId" placeholder="Enter Applicant Email Id" width="100%" class="customInput"/>
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox4">
+                    <Label id="LAlabel5" text="Enter Aadhaar No" class="customLabel" />
+                    <Text id="LAtext4" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterAadhaarNo" placeholder="Enter Aadhaar No" width="100%" class="customInput" />
+                </VBox>
+
+                </VBox>
+
+                <VBox id="LAbox2" width="48%">
+                
+                <VBox class="customMargin">
+                <HBox id="LAhbox5">
+                    <Label id="LAlabel6" text="Enter PAN No" class="customLabel"/>
+                    <Text id="LAtext5" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterPanNo" placeholder="Enter PAN No" width="98%" class="customInput"/>
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox6">
+                    <Label id="LAlabel7" text="Enter Salary" class="customLabel"/>
+                    <Text id="LAtext6" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="enterSalary" placeholder="Enter Salary" width="98%" class="customInput"/>
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox id="LAhbox7">
+                    <Label id="LAlabel8" text="Select Loan Type" class="customLabel" />
+                    <Text id="LAtext7" text="*" class="mandatoryStar" />
+                </HBox>
+                    <Input id="selectloantype" placeholder="Select Loan Type" width="98%" class="customInput"/>
+                </VBox>
+
+                <VBox class="customMargin">
+                <HBox >
+                    <Label text="Enter Loan Amount" class="customLabel" />
+                    <Text text="*" class="mandatoryStar"/>
+                </HBox>
+                    <Input id="enterloanamount" placeholder="Enter Loan Amount" width="98%" class="customInput"/>
+                </VBox>
+                
+                </VBox>
+                </FlexBox>
+            </f:SimpleForm>
+        </content>
+        <footer  >
+            <Toolbar id="LAtoolbar" class="sapUiSmallMargin">
+                <ToolbarSpacer id="LAtoolbarspacer" />
+                <Button id="LAbutton1" text="Submit" press=".onSubmit" type="Emphasized" class="customButton" />
+                
+                <Button id="LAbutton2" text="Cancel" press=".onCancel" type="Reject" class="customButton" />
+                <ToolbarSpacer id="LAtoolbarspacer1" />
+            </Toolbar>
+        </footer>
+    </Page>
+    </App>
+    </Shell>
+</mvc:View>
